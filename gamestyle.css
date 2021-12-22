@@ -1,0 +1,73 @@
+body{
+	font-family: sans-serif;
+}
+h1{
+	color: #CE8467;
+	text-shadow: 0.1em 0.1em white;
+	font-weight: bold;
+	margin-top: 10px;
+}
+p{
+	color:#B97687;
+	font-size: 18px;
+	font-weight: 900;
+	text-shadow: 0.1em 0.1em white;
+}
+h3{
+	color:#B97687;
+	font-weight: 900;
+	text-shadow: 0.1em 0.1em white;
+}
+.game{
+	margin:0px auto;
+	border: 4px double #B57FB3;
+	border-radius: 10px;
+	width: 250px;
+	height: auto;
+	margin-top: 40px ;
+	padding: 20px 15px;
+	background-color:#F9D9CA ;
+}
+.input-style{
+	margin-top: 5px;
+	width: 200px;
+	height: 45px;
+	border: 2px double #D18063;
+	border-radius: 8px;
+	font-size: 16px;
+	text-align: center;
+	background-color:#EFBAD6 ;
+}
+input[type="text"], textarea {
+	color : white;
+	text-shadow: 0.1em 0.1em #CACFE3;
+	font-weight: bold; 
+}
+.button{
+  	background-color:#F0E4D4 ;
+  	border: 2px solid #917B56;
+  	color: #917B56;
+  	margin-top: 5px;
+  	width: 130px;
+  	height: 40px;
+ 	border-radius: 8px;
+  	padding: 5px 10px;
+  	text-align: center;
+  	display: inline-block;
+  	font-size: 20px;
+}
+.button:hover{
+  	background-color:#917B56;
+  	color: #FAF0E4;
+  	border: 2px dashed #EDEEF0;
+  	transition: all .3s ease;
+}
+.result-style{
+	margin-top: 10px;
+	border: 2px solid #FAF0E4;
+}
+div[type="text"], textarea {
+	color : #666666;
+	text-shadow: 0.1em 0.1em white;
+	font-weight: bold;
+}

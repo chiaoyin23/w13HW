@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Guessing Game</title>
+	<link rel="stylesheet" type="text/css" href="gamestyle.css">
+</head>
+<body>
+<div class="game">
+	<form action="#">
+	<h1>Guessing Game</h1>
+		<p>Your Guess(1 ~ 100)</p>
+		<input id="guess" type="text" class="input-style" >
+		<input id="guessnum" type="button" value="play" class="button"  onclick="play();">
+		</form>
+		<div id="result" class="result-style" type="text">
+			<h3>Result</h3>
+		</div>
+</div>
+
+<script type="text/javascript">	
+
+var answer = Math.floor(Math.random() * 100 + 1);
+var up = 100;
+var under = 1;
+
+function play(){
+	var userguess = document.getElementById("guess").value;
+		if (userguess == answer) {
+			alert("Boom!");
+		}else if (userguess < answer) {
+			under = userguess;
+			print();
+		}else{
+			up = userguess;
+			print();
+		}
+		document.getElementById('guess').value = '';
+}
+
+
+
+function print(){
+
+	var x = document.createElement('div');
+	var y = document.createTextNode(under + '~' + up);
+	x.appendChild(y);
+	document.getElementById('result').appendChild(x);
+
+}
+
+
+</script>
+
+</body>
+</html>
